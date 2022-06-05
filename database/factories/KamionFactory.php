@@ -17,7 +17,7 @@ class KamionFactory extends Factory
         return [
             'tablice' => $this->faker->bothify('??-####-??/??-####-??'),
             'model' => $this->faker->randomElement($array = array('Mercedes-Benz', 'Volvo', 'MAN', 'SCANIA')),
-            'vozac' => $this->faker->name(),
+            'vozac' => $this->faker->name($gender = 'male'),
             'prevoznik_id' => Prevoznik::factory()
         ];
     }

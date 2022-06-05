@@ -13,6 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $PS = new PrevoznikSeeder();
+        $PS->run();
+
+        $KS = new KamionSeeder();
+        $KS->run();
+
+        $TS = new TuraSeeder();
+        $TS->run();
     }
 }
