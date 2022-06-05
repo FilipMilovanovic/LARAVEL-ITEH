@@ -20,4 +20,11 @@ class Kamion extends Model
     {
         return $this->hasMany(Tura::class);
     }
+
+    protected $fillable = [
+        'tablice',
+        'model',
+        'vozac',
+        'prevoznik_id',
+    ];
 }

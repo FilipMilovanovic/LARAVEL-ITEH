@@ -14,4 +14,11 @@ class Prevoznik extends Model
     {
         return $this->hasMany(Kamion::class);
     }
+
+    protected $fillable = [
+        'firma',
+        'adresa',
+        'direktor',
+        'sajt',
+    ];
 }

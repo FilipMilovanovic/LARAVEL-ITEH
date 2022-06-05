@@ -14,4 +14,12 @@ class Tura extends Model
     {
         return $this->belongsTo(Kamion::class);
     }
+
+    protected $fillable = [
+        'datumPolaska',
+        'datumDolaska',
+        'km',
+        'cena',
+        'kamion_id',
+    ];
 }
